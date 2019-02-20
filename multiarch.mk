@@ -11,12 +11,12 @@
 
 #
 # e.g.
-# download this file as multi-arch.mk
+# download this file as multiarch.mk
 # and in your Makefile:
 #
 #   BUILD_IMAGE=myorg/myrepo
 #   PACKAGE_NAME=github.com/myorg/myrepo
-#   include multi-arch.mk
+#   include multiarch.mk
 
 SHELL=/bin/sh
 BINARY ?= metabot
