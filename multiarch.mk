@@ -2,21 +2,6 @@
 #
 # Makefile to build using golang for Linux on multiple architectures, as well as create OCI images and multi-arch manifests
 #
-# Usage:
-#
-# Include it in your Makefile and set the following parameters:
-#  BUILD_IMAGE - the name of the OCI image as will be pushed to repo - required
-#  BUILDER_IMAGE - the name of the image to use to build - optional, defaults to golang:latest
-#  PACKAGE_NAME - the name of the package relatie to $GOPATH/src - required
-
-#
-# e.g.
-# download this file as multiarch.mk
-# and in your Makefile:
-#
-#   BUILD_IMAGE=myorg/myrepo
-#   PACKAGE_NAME=github.com/myorg/myrepo
-#   include multiarch.mk
 
 SHELL=/bin/sh
 BINARY ?= metabot
